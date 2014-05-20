@@ -1,6 +1,7 @@
 # 7352 observations
 # setwd("")
 
+# Read various datasets
 X_train<-read.table("UCI HAR Dataset/train/X_train.txt")
 y_train<-read.table("UCI HAR Dataset/train/y_train.txt")
 
