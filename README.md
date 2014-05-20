@@ -19,6 +19,32 @@ Readme.md
 
 A readme file containing brief description of each file submitted for the Course pPoject.
 
+Here is a summary of what this script does:  
+- Read various datasets
+- Combine various datasets (training set with corresponding test set)
+
+- As noted by "features_info.txt" file, tAcc-XYZ and tGyro-XYZ are the only raw 
+  signals measured. Rest of the values are some or the other transformations 
+  from tAcc-XYZ and tGyro-XYZ. 
+  Hence, only extracting mean() and std() for tAcc-XYZ and tGyro-XYZ:
+  (these are the following columns as per "features.txt")
+  - 1 tBodyAcc-mean()-X
+  - 2 tBodyAcc-mean()-Y
+  - 3 tBodyAcc-mean()-Z
+  - 4 tBodyAcc-std()-X
+  - 5 tBodyAcc-std()-Y
+  - 6 tBodyAcc-std()-Z
+  - 41 tGravityAcc-mean()-X
+  - 42 tGravityAcc-mean()-Y
+  - 43 tGravityAcc-mean()-Z
+  - 44 tGravityAcc-std()-X
+  - 45 tGravityAcc-std()-Y
+  - 46 tGravityAcc-std()-Z    
+- Assign meaningful column names
+- Load activity names (labels)
+- Average all mean and SD measures over subject and activity for tidy data set
+- Write the final tidy dataset to an ouptut file tidyDF.txt for submission
+
 run_analysis.R
 ==============
 
